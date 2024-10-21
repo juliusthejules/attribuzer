@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Attribuzer is a customizable attribution system for developers, designed for easy integration and updates across websites.">
-    <meta name="keywords" content="attribution, customizable, developer tools, GitHub Pages, open-source">
-    <meta name="author" content="Joseph D. Smith">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Title and Favicon -->
+    <title>Attribuzer - A Customizable Attribution System</title>
+    <link rel="icon" href="./favicon.png" sizes="512x512" type="image/png">
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Attribuzer is a customizable attribution system for developers to provide project credits easily. Modify XML, use custom JS, and ensure consistent attribution across your web projects.">
+    <meta name="keywords" content="Attribuzer, Attribution System, Attribution XML, Custom Attribution, Attribution for Developers, License Attribution">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Attribuzer - A Customizable Attribution System">
+    <meta property="og:description" content="Easily customize and provide proper attribution for your projects with Attribuzer. Modify details using XML and JavaScript for dynamic updates.">
+    <meta property="og:image" content="https://juliusthejules.github.io/attribuzer/social.png">
+    <meta property="og:url" content="https://juliusthejules.github.io/attribuzer/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Attribuzer - A Customizable Attribution System">
+    <meta name="twitter:description" content="Easily customize and provide proper attribution for your projects with Attribuzer. Modify details using XML and JavaScript for dynamic updates.">
+    <meta name="twitter:image" content="https://juliusthejules.github.io/attribuzer/social.png">
+    
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="./style.css">
-    <title>Attribuzer | Customizable Attribution System</title>
 </head>
+
 <body>
     <header>
         <h1>Welcome to Attribuzer</h1>
     </header>
 
     <section>
-        <p>Attribuzer is a customizable attribution system designed to make it easy for developers to provide the required attribution for their projects.</p>
-        
+        <p>Attribuzer is an open-source, customizable attribution system that lets developers easily provide credit and project details in a flexible, dynamic way. You can configure your own attribution XML file, and use the provided JavaScript to display credits consistently across your website.</p>
+
+        <h2>How Attribuzer Works</h2>
+        <p>Attribuzer uses an XML file to store attribution details, including project title, creator information, and license details. The JavaScript file then fetches this data and dynamically displays it on your website.</p>
+
         <!-- Attribution content will be dynamically loaded here -->
         <div id="attribution"></div>
     </section>
 
     <footer>
-        <p>Attribuzer. Copyright &copy; 2024 Joseph D. Smith</p>
+        <p>&copy; 2024 Attribuzer by Joseph D. Smith. Attribution system developed for flexible use across web projects.</p>
     </footer>
 
-    <!-- Load the attribution dynamically -->
+    <!-- Asynchronous loading of attribution -->
     <script src="./attribution/attribution.js" async></script>
 </body>
+
 </html>
