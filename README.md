@@ -24,7 +24,7 @@ Since this project does not use APIs or endpoints, users will need to clone and 
 
    ```html
    <div id="attribution"></div>
-   <script src="./attribution/attribution.js" async></script>
+   <script src="./attribution/attribution.js"></script>
    ```
 
 4. Place the files in the correct directory structure on your local server or hosting environment.
@@ -35,7 +35,7 @@ To manually integrate Attribuzer into your project, include the following code i
 
 ```html
 <div id="attribution"></div>
-<script src="./attribution/attribution.js" async></script>
+<script src="./attribution/attribution.js"></script>
 ```
 
 The JavaScript will load the attribution details from the `attribution.xml` file that you manually set up.
